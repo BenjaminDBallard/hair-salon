@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
     <title>Mustache Enthusiast</title>
 </head>
 <body>
     <section class="heading">
         <a href="index.html"><img class="logo" src="Images/logo.jpg" alt="logo-img"></a>
         <nav class="nav-bar">
-            <ul class="link-container">
+            <a class="menu-toggle" href="javascript:void(0);" onclick="dropdown()"><i id="nav-icon" class="fa fa-bars"></i></a>
+            <ul id="link-container" class="wide-menu">
                 <li><a class="link" href="index.html">HOME</a></li>
                 <li><a class="link" href="pages/about.html">ABOUT</a></li>
                 <li><a class="link" href="pages/gallery.html">GALLERY</a></li>
@@ -25,7 +30,7 @@
             <div class="article-container">
             <article class="article">
                 <h1 class="title">THE BEACON TO ALL MANKIND</h1>
-                <h2 class="text">Our website templates are created with <br> inspiration, checked for quality and originality <br> and meticulously sliced and coded.</h2>
+                <p class="text">Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded.</p>
                 <button class="btn">READ MORE</button>
             </article>
         </div>
@@ -56,10 +61,16 @@
         <div class="footer-content">
         <p>© 2023 by Mustacchio. All rights reserved.</p>
         <nav>
-            <a href="">twitter</a>
-            <a href="">facebook</a>
-            <a href="">google +</a>
-            <a href="">pinterest</a>
+            <ul class="icon-container">
+                <li class="icon-box"><a href="#"><i class="icon fa-brands fa-twitter"></i></a></li>
+                <li class="icon-box"><a href="#"><i class="icon fa-brands fa-facebook"></i></a></li>
+                <li class="icon-box"><a href="#"><i class="icon fa-brands fa-google"></i></a></li>
+                <li class="icon-box"><a href="#"><i class="icon fa-brands fa-pinterest"></i></a></li>
+            </ul>
+            
+            
+            
+            
         </nav>
     </section>
     <script src="script.js"></script>
