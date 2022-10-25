@@ -357,3 +357,155 @@ body{
 .profile-title{
     font: 20px 'Poller One', cursive;
 }
+
+
+
+/* about.html    ==================== */
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-title{
+    font: 20px 'poller one', cursive;
+    color: white;
+    background-color:#252525;
+    padding: 15px;
+    width: 80vw;
+    margin: 0;
+}
+
+.bordered{
+    border: 2px solid #252525;
+}
+
+.about-img{
+    margin-top: 24px;
+    width: 84vw
+}
+
+.about-article{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252525;
+    margin: 0 170px;
+    padding: 30px 30px 0;
+    line-height: 24px;
+}
+
+.art-header{
+    margin: 0;
+    font-size: 16.38px;
+}
+
+.art-text{
+    margin: 0 0 30px;
+    font-size: 14px;
+    width: 85vw;
+}
+
+.art-links{
+    color: #252525;
+}
+
+.art-links:hover{
+    color: #8989A8
+}
+
+@media (min-width: 636px){
+    .about-title{
+        font: 35px 'poller one', cursive;
+        padding: 15px 28px 12px;
+        width: initial;
+    }
+
+    .about-img{
+        width: initial;
+    }
+
+    .art-text{
+        width: 560px;
+    }
+}
+
+
+/* gallary.html    ==================== */
+
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 85vw;
+    margin: 24px 0;
+}
+
+.gallary-title{
+    font: 20px 'poller one', cursive;
+    color: white;
+    background-color:#252525;
+    padding: 15px;
+    width: 270px;
+    margin: 0;
+}
+
+
+@media (min-width: 990px){
+
+    .gallary-title{
+        font: 35px 'poller one', cursive;
+        padding: 15px 28px 12px;
+        width: initial;
+    }
+
+    .gallary{
+        width: 960px;
+    }
+
+
+}
+
+@media (min-width: 730px) and (max-width: 989px){
+    .gallary-title{
+        font: 35px 'poller one', cursive;
+        padding: 15px 28px 12px;
+        width: 564px;
+    }
+}
+
+/* blog.html    ==================== */
+
+.font-arialblk{
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #252525;
+}
+
+.font-arial{
+    font-family: Arial, Gadget, sans-serif;
+    color: #252525;
+}
+
+.md{
+    font-size: 25px;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-border{
+    border-right: 2px solid #252525;
+}
+
+.btn-blk{
+    text-decoration: none;
+    padding: 8px 28px;
+    background-color: black;
+    font-size: 18px;
+    color: white;
+}
