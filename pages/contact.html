@@ -9,27 +9,59 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap"
+      rel="stylesheet"
+    />
     <title>Mustache Ehtnusiast - Contact</title>
   </head>
   <body>
-    <section class="heading">
-      <a href="index.html"
-        ><img class="logo" src="/Images/logo.jpg" alt="logo-img"
-      /></a>
-      <nav class="nav-bar">
-        <a class="menu-toggle" href="javascript:void(0);" onclick="dropdown()"
-          ><i id="nav-icon" class="fa fa-bars"></i
-        ></a>
-        <ul id="link-container" class="wide-menu">
-          <li><a class="link" href="/index.html">HOME</a></li>
-          <li><a class="link" href="about.html">ABOUT</a></li>
-          <li><a class="link" href="gallery.html">GALLERY</a></li>
-          <li><a class="link" href="blog.html">BLOG</a></li>
-          <li><a class="link" href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
+    <section class="page">
+      <section class="content-wrap">
+        <section class="heading">
+          <a href="index.html"
+            ><img class="logo" src="/Images/logo.jpg" alt="logo-img"
+          /></a>
+          <nav class="nav-bar">
+            <a class="menu-toggle" href="javascript:void(0);" onclick="dropdown()"
+              ><i id="nav-icon" class="fa fa-bars"></i
+            ></a>
+            <ul id="link-container" class="wide-menu">
+              <li><a class="link" href="/index.html">HOME</a></li>
+              <li><a class="link" href="about.html">ABOUT</a></li>
+              <li><a class="link" href="gallery.html">GALLERY</a></li>
+              <li><a class="link" href="blog.html">BLOG</a></li>
+              <li><a class="link" href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="cntct-content">
+        <h1 class="cntct-title">LET'S KEEP IN TOUCH</h1>
+        <form class="form" action="">
+          <input class="form-item" type="text" name="fname" id="fname" value="name">
+          <input class="form-item" type="text" name="address" id="address" value="address">
+          <input class="form-item" type="text" name="email" id="email" value="email">
+          <input class="form-item" type="text" name="phone" id="phone" value="phone number">
+          <textarea class="form-item  area" name="message" id="message">message</textarea>
+          <input class=" cntctbtn-blk" type="submit" name="send" id="send" value="SEND"></input>
+        </form>
+      </section>
     </section>
-    <h1>Contact</h1>
+      <section class="footer">
+        <div class="footer-content">
+        <p>© 2023 by Mustacchio. All rights reserved.</p>
+        <nav>
+            <ul class="icon-container">
+                <li class="icon-box"><a href="#"><i class="icon fa-brands fa-twitter"></i></a></li>
+                <li class="icon-box"><a href="#"><i class="icon fa-brands fa-facebook"></i></a></li>
+                <li class="icon-box"><a href="#"><i class="icon fa-brands fa-google"></i></a></li>
+                <li class="icon-box"><a href="#"><i class="icon fa-brands fa-pinterest"></i></a></li>
+            </ul>
+        </nav>
+    </section>
+  </section>
     <script src="/script.js"></script>
   </body>
 </html>

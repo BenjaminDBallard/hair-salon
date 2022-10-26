@@ -1,8 +1,16 @@
 /* General  ==================== */
 /* header   -------------------- */
-
 body{
     padding: 0;
+    margin: 0;
+}
+.page{
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap{
+    padding: 0 0 177px;
     margin: 0;
 }
 
@@ -130,6 +138,10 @@ body{
 }
 
 @media (min-width: 636px){
+.content-wrap{
+    padding: 0 0 128;
+}
+
     .menu-toggle{
         display: none;
     }
@@ -161,6 +173,9 @@ body{
 /* Footer  --------------------------- */
 
 .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: #252525;
@@ -479,6 +494,46 @@ body{
 
 /* blog.html    ==================== */
 
+.blog-title{
+    font: 20px 'poller one', cursive;
+    color: white;
+    background-color:#252525;
+    padding: 15px 0px;
+    width: 70vw;
+    margin: 0;
+}
+
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.clear{
+    padding: 0;
+    margin: 0;
+}
+
+.blog-img{
+    opacity:.8;
+}
+
+.blog-img:hover{
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+.gap{
+    padding: 24px 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70vw;
+}
+
 .font-arialblk{
     font-family: "Arial Black", Gadget, sans-serif;
     color: #252525;
@@ -493,13 +548,28 @@ body{
     font-size: 25px;
 }
 
+.sm{
+    font-size: 14px;;
+}
+
+.text-pad{
+    padding: 30px 30px 18px;
+    margin: 0;
+    line-height: 1.75;
+}
+
+.blog-card{
+    padding: 63px 0 20px;
+    width: 100%;
+}
+
 .flex-row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .sub-border{
-    border-right: 2px solid #252525;
+    border-right: none;
 }
 
 .btn-blk{
@@ -509,3 +579,154 @@ body{
     font-size: 18px;
     color: white;
 }
+
+.btn-blk:hover{
+    background-color: white;
+    color:#252525;
+    border: 2px solid #252525;
+}
+
+@media (min-width: 980px){
+    .flex-row{
+        flex-direction: row;
+    }
+
+    .sub-border{
+        border-right: 2px solid #252525;
+    }
+
+    .gap{
+        width: 940px;
+    }
+
+    .blog-title{
+        font: 35px 'poller one', cursive;
+        padding: 15px 28px 12px;
+        width: initial;
+    }
+}
+
+/* contact.html    ==================== */
+
+.cntct-title{
+    font: 20px 'poller one', cursive;
+    color: white;
+    background-color:#252525;
+    padding: 15px 10px;
+    width: 66vw;
+    margin: 0;
+}
+
+.cntct-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    .form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 66vw;
+        gap: 20px;
+        margin: 30px;
+    }
+
+    .form-item{
+        padding: 10px;
+        border: 2px solid #252525;
+        text-align: center;
+        font: 15px Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        width: 100%;
+
+    }
+
+    .area{
+        height: 175px;
+        overflow: auto;
+        resize: none;
+    }
+
+    .cntctbtn-blk{
+        display: inline-block;
+        text-decoration: none;
+        border: 2px solid #252525;
+        padding: 10px;
+        background-color: #252525;
+        font-size: 15px;
+        color: white;
+        width: fit-content;
+        font-family: "Arial Black", Gadget, sans-serif;
+        margin-bottom: 20px;
+        
+    }
+    
+    .cntctbtn-blk:hover{
+        background-color: white;
+        color:#252525;
+    }
+
+    @media (min-width: 980px){
+        .cntct-title{
+            font: 35px 'poller one', cursive;
+            padding: 15px 28px 12px;
+            width: initial;
+        }
+
+        .form{
+            width: 620px;
+            gap: 37px;
+            margin: 30px;
+        }
+
+        .form-item{
+            padding: 20px 10px;
+        }
+
+        .cntctbtn-blk{
+            padding: 20px 28px;
+            margin-bottom: 37px;
+            
+        }
+    }
+
+
+    /* blog1.html    ==================== */
+
+    .margin-gap{
+        margin-top: 24px;
+        width: 70vw;
+    }
+
+    .blog1-art{
+        width: 70vw;
+        padding: 30px 30px 0;
+    }
+
+    .blog1-p{
+        font: 14px arial, helvetica, sans-serif;
+        margin: 0 0 30px;
+        color: #252525;
+        line-height: 1.75;
+    }
+
+    .blog1-title{
+        font: 18px "arial black", Gadget, sans-serif;
+    }
+
+    @media (min-width: 980px){
+        .margin-gap{
+            width: initial;
+        }
+    
+        .blog1-art{
+            width: 560px;
+        }
+    
+        .blog1-title{
+            font: 25px "arial black", Gadget, sans-serif;
+        }
+    }
