@@ -112,24 +112,6 @@ body{
     background-color: black;
 }
 
-/* .link.current-mobile{
-    background-color: black;
-} */
-
-/* .mobile:
-
-.mobile:hover{
-    background-color: black;
-}
-
-.mobile:active{
-    color:#0BA39C;
-}
-
-.mobile.current{
-    color:#0BA39C;
-} */
-
 .menu-toggle{
     display: flex;
     justify-content: center;
